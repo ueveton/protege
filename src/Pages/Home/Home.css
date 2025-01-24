@@ -6,3 +6,36 @@
     background-color: blue;
     color: antiquewhite;
 }
+
+.card-title {
+    text-align: center;
+    padding: 8px;
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #37AE49;
+    margin: auto;
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.card-user {
+    background-color: #6C30B6;
+}
+
+.card-text {
+    font-size: 70px;
+    padding-top: 10%;
+    color: #101111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-text:hover {
+    color: white;
+    transition: 0.5s;
+}
