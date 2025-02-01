@@ -39,3 +39,10 @@
     color: white;
     transition: 0.5s;
 }
+
+.table {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6px;
+}

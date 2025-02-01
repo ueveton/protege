@@ -6,9 +6,17 @@ import { Grafic } from '../../components/grafic/Grafic'
 export const Home = () => {
 
     const data_clients = [
-        ['Nome', 'qtde'],
+        ['Cloud', 'qtde'],
         ['ZipPlus', 100],
         ['Mega', 50]
+    ]
+
+    const data_faturamento = [
+        ["Mês", "Valor", { role: "style" }],
+        ["Setembro", 800, "#b87333"], // RGB value
+        ["Outubro", 700, "silver"], // English color name
+        ["Novembro", 1100, "gold"],
+        ["Dezembro", 1250, "color: #e5e4e2"], // CSS-style declaration
     ]
 
     return (
@@ -83,7 +91,7 @@ export const Home = () => {
                             </div>
                             <div className='col-md-6'>
                                 <div className='card m-1'>
-                                    <Grafic 
+                                    <Grafic
                                         title="Cliente por Cloud"
                                         chartType='Bar'
                                         data={data_clients}
@@ -92,10 +100,48 @@ export const Home = () => {
                                 </div>
                             </div>
                             <div className='col-md-6'>
-                                <h2>Grafic 1</h2>
+                                <div className='card m-1'>
+                                    <Grafic
+                                        title="Faturamento por mes"
+                                        chartType='ColumnChart'
+                                        data={data_faturamento}
+                                    />
+                                </div>
                             </div>
                             <div className='col-md-6'>
-                                <h2>Grafic 3</h2>
+                                <div className='card m-1 table'>
+                                    <h2>Clientes para renovação</h2>
+                                    <table className="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Empresa</th>
+                                                <th scope="col">V.Atual</th>
+                                                <th scope="col">V.Definido</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Panificadora e comercio Ramos LTDA</td>
+                                                <td>80</td>
+                                                <td>88</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Padaria e churrascaria barollo ltda</td>
+                                                <td>45</td>
+                                                <td>49,50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Le'Si modas LTDA</td>
+                                                <td>55</td>
+                                                <td>60,5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
