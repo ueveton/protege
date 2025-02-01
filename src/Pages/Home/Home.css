@@ -7,6 +7,11 @@
     color: antiquewhite;
 }
 
+.active{
+    background-color: blue;
+    color: antiquewhite;
+}
+
 .card-title {
     text-align: center;
     padding: 8px;

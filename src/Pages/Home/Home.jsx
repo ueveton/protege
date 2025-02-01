@@ -2,6 +2,7 @@ import React from 'react'
 import { NavBar } from '../../components/navBar/NavBar'
 import './Home.css'
 import { Grafic } from '../../components/grafic/Grafic'
+import { Link } from 'react-router-dom'
 
 export const Home = () => {
 
@@ -31,16 +32,16 @@ export const Home = () => {
                             </a>
                             <ul className='nav nav-pills fex-colunn mt-4'>
                                 <li className='nav-iten py-3'>
-                                    <a href="" className='nav-link'>
+                                    <a href="" className='nav-link active'>
                                         <i className="bi bi-house-add-fill"></i>
                                         <span className='fs-4 d-none ms-2 d-sm-inline'>Home</span>
                                     </a>
                                 </li>
                                 <li className='nav-iten py-3'>
-                                    <a href="" className='nav-link'>
+                                    <Link to="/clients" className='nav-link'>
                                         <i className="bi bi-clipboard-data-fill"></i>
                                         <span className='fs-4 d-none ms-2 d-sm-inline'>Clientes</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className='nav-iten py-3'>
                                     <a href="" className='nav-link'>

@@ -1,0 +1,10 @@
+.button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.button h5 {
+    padding-left: 6px;
+}
