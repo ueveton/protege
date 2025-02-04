@@ -8,3 +8,12 @@
 .button h5 {
     padding-left: 6px;
 }
+
+.container-area {
+    border: 1px solid #64616154;
+    height: 75vh;
+}
+
+.tbody td, th {
+    text-align: start;
+}
