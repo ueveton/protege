@@ -2,13 +2,14 @@ import React from 'react'
 import { NavBar } from '../../components/navBar/NavBar'
 import { Link } from 'react-router-dom'
 import './Clientes.css'
+import { SidBar } from '../../components/sidbar/SidBar'
 
 
 export const Clients = () => {
     return (
         <div>
-            <NavBar />
-            <div className='container-fluid'>
+            {/* <NavBar /> */}
+            {/* <div className='container-fluid'>
                 <div className='row flex-nowrap'>
                     <div className='bg-dark col-2 container'>
                         <div className='bg-dark p-2'>
@@ -52,10 +53,8 @@ export const Clients = () => {
                     <div className='col-10 bg-secondary-subtle'>
                         <div className='ms-4 d-flex justify-content-between pt-3'>
                             <h2>Clientes</h2>
-                            {/* <button className='btn btn-primary ms-4'>Atualizar</button> */}
                             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 <div className='button'>
-                                    {/* <i className="bi bi-plus-square-fill"></i> */}
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-plus-square-fill" viewBox="0 0 16 16">
                                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0" />
                                     </svg>
@@ -63,7 +62,7 @@ export const Clients = () => {
                                 </div>
                             </button>
 
-                            {/* <!-- Modal --> */}
+                            
                             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div className="modal-dialog modal-lg">
                                     <div className="modal-content">
@@ -107,17 +106,17 @@ export const Clients = () => {
                                                             <input type="text" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="email" />
                                                         </div>
                                                         <div className='mb-3 col'>
-                                                            <select className="form-select" aria-label="Default select example">
-                                                                <option selected>Situação</option>
-                                                                <option value="1">Ativo</option>
-                                                                <option value="2">Cancelado</option>
+                                                            <select className="form-select" name='situacao' id='situacao'>
+                                                                <option value="">Situação</option>
+                                                                <option value="A">Ativo</option>
+                                                                <option value="C">Cancelado</option>
                                                             </select>
                                                         </div>
                                                         <div className='mb-3 col'>
-                                                            <select className="form-select" aria-label="Default select example">
-                                                                <option selected>Tipo de Armazenamento</option>
-                                                                <option value="hostinger">Hostinger</option>
-                                                                <option value="mega">Mega</option>
+                                                            <select className="form-select" name='cloud' id='cloud'>
+                                                                <option value="">Tipo de Armazenamento</option>
+                                                                <option value="H">Hostinger</option>
+                                                                <option value="M">Mega</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -146,15 +145,15 @@ export const Clients = () => {
                                 <div className='col-3 mb-3'>
                                     <select className="form-select">
                                         <option value="to">Todos</option>
-                                        <option value="act">Ativos</option>
-                                        <option value="cancel">Cancelados</option>
+                                        <option value="A">Ativos</option>
+                                        <option value="C">Cancelados</option>
                                     </select>
                                 </div>
                                 <div className='col-3 mb-3'>
                                     <select className="form-select">
                                         <option value="0">Armazenamento</option>
-                                        <option value="1">Hostinger</option>
-                                        <option value="2">Mega</option>
+                                        <option value="H">Hostinger</option>
+                                        <option value="M">Mega</option>
                                     </select>
                                 </div>
                             </div>
@@ -204,7 +203,8 @@ export const Clients = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <SidBar />
         </div>
     )
 }
