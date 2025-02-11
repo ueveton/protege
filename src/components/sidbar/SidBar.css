@@ -7,3 +7,32 @@
 .company h3 {
     padding-left: 5px;
 }
+
+.nav-bar {
+    margin: 5px;
+}
+
+.nav-bar li {
+    border: none;
+    color: antiquewhite;
+    padding: 5px;
+}
+
+.nav-bar li a {
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    color: rgb(26, 197, 140);
+}
+
+.nav-bar li a svg {
+    width: 26px;
+    height: 26px;
+}
+
+.nav-bar-link {
+    font-size: 13px;
+}
