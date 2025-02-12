@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../../../public/ProtegeIcon.png'
 import { Link } from 'react-router-dom'
 import './SidBar.css'
+import { ModalClientes } from '../clientes/ModalClientes'
 
 export const SidBar = () => {
     return (
@@ -35,12 +36,12 @@ export const SidBar = () => {
                             </Link>
                         </li>
                         <li className='list-group-item'>
-                            <a href="" className='d-flex flex-column'>
+                            <Link to="/user" className='d-flex flex-column'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-badge-fill" viewBox="0 0 16 16">
                                     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6m5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1z" />
                                 </svg>
                                 <span className='nav-bar-link'>Usuarios</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className='list-group-item'>
                             <a href="" className='d-flex flex-column'>
@@ -61,8 +62,8 @@ export const SidBar = () => {
                             <span className="d-none d-sm-inline mx-1">Ueveton</span>
                         </a>
                         <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
-                            <li><a className="dropdown-item" href="#">Perfil</a></li>
-                            <li><a className="dropdown-item" href="#">Criar conta</a></li>
+                            <li><Link className="dropdown-item" to="/modal">Perfil</Link></li>
+                            <li><Link className="dropdown-item" to="/user">Criar conta</Link></li>
                             <li>
                                 <hr className="dropdown-divider"/>
                             </li>
