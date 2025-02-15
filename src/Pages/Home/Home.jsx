@@ -44,10 +44,10 @@ export const Home = () => {
                                     </Link>
                                 </li>
                                 <li className='nav-iten py-3'>
-                                    <a href="" className='nav-link'>
+                                    <Link to="/user" className='nav-link'>
                                         <i className="bi bi-person-badge-fill"></i>
                                         <span className='fs-4 d-none ms-2 d-sm-inline'>Usuarios</span>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className='nav-iten py-3'>
                                     <a href="" className='nav-link'>
