@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../../public/ProtegeIcon.png'
+import Logo from '../../img/ProtegeIcon.png'
 import { Link } from 'react-router-dom'
 import './SidBar.css'
 import { ModalClientes } from '../clientes/ModalClientes'
