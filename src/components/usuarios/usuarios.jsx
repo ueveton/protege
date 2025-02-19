@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const Usuarios = (props) => {
+
     return (
         <tr>
             <th scope="row">{props.id_usuarios}</th>

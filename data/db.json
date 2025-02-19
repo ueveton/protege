@@ -1,0 +1,58 @@
+{
+  "usuarios": [
+    {
+      "id_usuarios": 1,
+      "name": "Ueveton Soares Perira",
+      "email": "uevetonsp89@gmail.com",
+      "phone": 27988327582
+    },
+    {
+      "id_usuarios": 2,
+      "name": "Heitor da Silva Soares",
+      "email": "heitorsilvas@gmail.com",
+      "phone": 27997004202
+    }
+  ],
+  "clientes": [
+    {
+      "id_clientes": 1,
+      "empresa": "Le Si Modas",
+      "district": "Av.vitoria, 350, centro, Nova venécia",
+      "registration": 11111111000111,
+      "phone": 999222325,
+      "email": "lesimodas@gmail.com",
+      "situacao": "A",
+      "cloud": "Hostinger"
+    },
+    {
+      "id_clientes": 2,
+      "empresa": "Padaria Barollo",
+      "district": "Av.guanabara, 30, Ascensao, Nova venécia",
+      "registration": 11111111000122,
+      "phone": 999333425,
+      "email": "padariabarollo@gmail.com",
+      "situacao": "A",
+      "cloud": "Mega"
+    },
+    {
+      "id_clientes": 3,
+      "empresa": "Furlan Madeiras",
+      "district": "Rod XV de novembro, 1630, São Fransisco, Nova venécia",
+      "registration": 11111111000133,
+      "phone": 999444525,
+      "email": "lesimodas@gmail.com",
+      "situacao": "C",
+      "cloud": "Hostinger"
+    },
+    {
+      "id": "fece",
+      "empresa": "Ueveton",
+      "district": "rua s",
+      "registration": "21385235000132",
+      "phone": "27988327582",
+      "email": "uevetonsp89@gmail.com",
+      "situacao": "Ativo",
+      "cloud": "Hostinger"
+    }
+  ]
+}

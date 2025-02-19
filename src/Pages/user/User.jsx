@@ -1,24 +1,22 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { SidBar } from '../../components/sidbar/SidBar'
 import { Usuarios } from '../../components/usuarios/usuarios'
 import { ModalUsuarios } from '../../components/usuarios/ModalUsuarios'
 
+const url = "http://localhost:3000/usuarios"
+
 export const User = () => {
 
-    const cad_usuarios = [
-        {
-            "id_usuarios": 1,
-            "name": 'Ueveton Soares Perira',
-            "email": 'uevetonsp89@gmail.com',
-            "phone": 27988327582,
-        },
-        {
-            "id_usuarios": 2,
-            "name": 'Heitor da Silva Soares',
-            "email": 'heitorsilvas@gmail.com',
-            "phone": 27997004202,
+    const [usuarios, setUsuarios] = useState([]);
+    useEffect(() => {
+        async function getUser() {
+            const res = await fetch(url)
+            const users = await res.json();
+            setUsuarios(users)
         }
-    ]
+        getUser()
+    },[])
 
     return (
         <div>
@@ -51,7 +49,7 @@ export const User = () => {
                         </thead>
                         <tbody className='tbody'>
                             {
-                                cad_usuarios.map((usuarios) => {
+                                usuarios.map((usuarios) => {
                                     return <Usuarios
                                         key={usuarios.id_usuarios}
                                         id_usuarios={usuarios.id_usuarios}

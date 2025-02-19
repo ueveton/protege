@@ -1,6 +1,16 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+
+const url = "http://localhost:3000/usuarios"
 
 export const ModalUsuarios = () => {
+
+    const [name, setname] = useState("")
+    const [email, setEmail] = useState("")
+    const [document, SetDocument] = useState("")
+    const [phoneC, setPhoneC] = useState("")
+    const [password, setPassword] = useState("")
+    
     return (
         <div className='p-1'>
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -19,7 +29,7 @@ export const ModalUsuarios = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <form action="">
+                            <form action="" className='add-usuarios'>
                                 <div className='container-fluid'>
                                     <div className='row'>
                                         <div className="input-group mb-3 col-12">

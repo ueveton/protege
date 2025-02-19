@@ -1,44 +1,24 @@
 import React from 'react'
+import { useEffect, useState } from 'react'
 import './Clients.css'
 import { SidBar } from '../../components/sidbar/SidBar'
 import { Clientes } from '../../components/clientes/clientes'
 import { ModalClientes } from '../../components/clientes/ModalClientes'
 
+const url = "http://localhost:3000/clientes"
+
 
 export const Clients = () => {
 
-    const cad_clientes = [
-        {
-            "id_clientes": 1,
-            "empresa": "Le Si Modas",
-            "district": "Av.vitoria, 350, centro, Nova venécia",
-            "registration": 11111111000111,
-            "phone": 999222325,
-            "email": "lesimodas@gmail.com",
-            "situacao": "A",
-            "cloud": "H"
-        },
-        {
-            "id_clientes": 2,
-            "empresa": "Padaria Barollo",
-            "district": "Av.guanabara, 30, Ascensao, Nova venécia",
-            "registration": 11111111000122,
-            "phone": 999333425,
-            "email": "padariabarollo@gmail.com",
-            "situacao": "A",
-            "cloud": "M"
-        },
-        {
-            "id_clientes": 3,
-            "empresa": "Furlan Madeiras",
-            "district": "Rod XV de novembro, 1630, São Fransisco, Nova venécia",
-            "registration": 11111111000133,
-            "phone": 999444525,
-            "email": "lesimodas@gmail.com",
-            "situacao": "C",
-            "cloud": "H"
-        }
-    ]
+    const [clientes, setClientes ] = useState([])
+    useEffect(() => {
+            async function getClientes() {
+                const res = await fetch(url)
+                const cliente = await res.json();
+                setClientes(cliente)
+            }
+            getClientes()
+        },[])
 
     return (
         <div>
@@ -86,7 +66,7 @@ export const Clients = () => {
                         </thead>
                         <tbody className='tbody'>
                             {
-                                cad_clientes.map((clientes) => {
+                                clientes.map((clientes) => {
                                     return <Clientes
                                         key={clientes.id_clientes}
                                         id_clientes={clientes.id_clientes}
